@@ -44,7 +44,7 @@ const Register = ({ history }) => {
 
   useEffect(() => {
     if (user && user.token) history.push('/');
-  }, [user]);
+  }, [user, history]);
 
   return (
     <div className='container p-5'>

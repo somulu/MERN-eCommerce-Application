@@ -31,7 +31,7 @@ const ForgotPassword = ({ history }) => {
 
   useEffect(() => {
     if (user && user.token) history.push('/');
-  }, [user]);
+  }, [user, history]);
 
   return (
     <div className='container col-md-6 offset-md-3 p-5'>
